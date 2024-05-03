@@ -26,28 +26,32 @@ export default function Search() {
 
   return (
     <div className="search">
-      <h2 className="search__title">Search by ingredients:</h2>
-      <form className="search__form" onSubmit={handleSubmit}>
-        <input
-          className="search__input"
-          type="text"
-          placeholder="Enter ingredients with a comma in between (e.g. lettuce, egg, pepper)"
-          value={ingredients}
-          onChange={handleInputChange}
-        ></input>
+      <div className="search__wrapper">
+        <h2 className="search__title">Search by ingredients:</h2>
+        <form className="search__form" onSubmit={handleSubmit}>
+          <input
+            className="search__input"
+            type="text"
+            placeholder="Enter ingredients with a comma in between (e.g. lettuce, egg, pepper)"
+            value={ingredients}
+            onChange={handleInputChange}
+          ></input>
 
-        <button className="search__btn" type="submit">
-          What's Cooking?
-        </button>
-      </form>
+          <button className="search__btn" type="submit">
+            What's Cooking?
+          </button>
+        </form>
 
-      <div className="search__results">
-        {recipes.map((recipe) => (
-          <div key={recipe.id} className="search__recipe">
-            <h3>{recipe.title}</h3>
-            <img src={recipe.image} alt={recipe.title} />
+        <div className="search__results">
+          <div className="search__container">
+            {recipes.map((recipe) => (
+              <div key={recipe.id} className="search__recipe">
+                <h3>{recipe.title}</h3>
+                <img src={recipe.image} alt={recipe.title} />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
