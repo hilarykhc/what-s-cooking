@@ -31,7 +31,7 @@ export default function Search() {
         <input
           className="search__input"
           type="text"
-          placeholder="Enter ingredients with a comma in between (e.g. lettuce,egg,pepper)"
+          placeholder="Enter ingredients with a comma in between (e.g. lettuce, egg, pepper)"
           value={ingredients}
           onChange={handleInputChange}
         ></input>

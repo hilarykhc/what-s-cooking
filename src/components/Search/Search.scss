@@ -6,12 +6,34 @@
   }
 
   &__input {
-    width: 30rem;
+    width: 17rem;
+    height: 6rem;
     padding: 1rem;
     margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid #c1c7c9;
+    border-radius: 6px;
+    padding-top: 0;
+    color: black;
+
+    &::placeholder {
+      white-space: pre-line;
+      font-style: italic;
+      color: #d7d7d7;
+      text-align: center;
+    }
   }
 
   &__btn {
-    width: 11rem;
+    width: 19rem;
+    background-color: #ffc529;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      border-color: #d7d7d7;
+    }
   }
 }
