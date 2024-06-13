@@ -12,7 +12,7 @@ export default function Search() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const apiKey = "5afd69213342467db7b59c337dc52561";
+    const apiKey = import.meta.env.VITE_API_KEY;
     const baseUrl = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&apiKey=${apiKey}`;
 
     try {
