@@ -20,30 +20,38 @@
   }
 
   &__input-username {
-    padding: 0.85rem;
+    padding: 0.85rem 0 0.85rem 1.75rem;
     @include input;
     background-image: url("../../assets/icons/profile.svg");
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 17px 17px;
+    font-size: 1rem;
+    height: 1.75rem;
 
     &::placeholder {
-      text-align: center;
-      //   color: #000000;
+      position: absolute;
+      top: 35%;
+      left: 3rem;
+      font-size: 1rem;
     }
   }
 
   &__input-password {
-    padding: 0.85rem;
+    padding: 0.85rem 0 0.85rem 1.75rem;
     @include input;
     background-image: url("../../assets/icons/password.svg");
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 20px 20px;
+    font-size: 3rem;
+    height: 1.75rem;
 
     &::placeholder {
-      text-align: center;
-      //   color: #000000;
+      position: absolute;
+      top: 35%;
+      left: 3rem;
+      font-size: 1rem;
     }
   }
 
@@ -54,5 +62,10 @@
 
   &__link {
     color: $red;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
