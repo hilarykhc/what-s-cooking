@@ -15,10 +15,8 @@
   }
 
   &__input {
-    width: 17rem;
     padding: 0.85rem;
-    margin-bottom: 1rem;
-    background-color: $input-background;
+    @include input;
   }
 
   &__button {

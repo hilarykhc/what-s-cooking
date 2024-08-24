@@ -37,7 +37,7 @@ export default function Search() {
             onChange={handleInputChange}
           ></input>
 
-          <button className="search__btn" type="submit">
+          <button className="search__button" type="submit">
             What's Cooking?
           </button>
         </form>

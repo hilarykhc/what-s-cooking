@@ -24,3 +24,19 @@
     border-color: #d7d7d7;
   }
 }
+
+@mixin input {
+  width: 17rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #c1c7c9;
+  border-radius: 6px;
+  color: #000000;
+
+  &::placeholder {
+    white-space: pre-line;
+    font-style: italic;
+    color: #d7d7d7;
+    text-align: center;
+  }
+}

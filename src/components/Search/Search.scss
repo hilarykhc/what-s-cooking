@@ -1,7 +1,7 @@
-@use "../../styles/partials/mixins";
-@use "../../styles/partials/resets";
-@use "../../styles/partials/typography";
-@use "../../styles/partials/variables";
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
 
 .search {
   &__wrapper {
@@ -17,35 +17,14 @@
   }
 
   &__input {
-    width: 17rem;
-    height: 6rem;
     padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: #fff;
-    border: 1px solid #c1c7c9;
-    border-radius: 6px;
+    height: 6rem;
     padding-top: 0;
-    color: black;
-
-    &::placeholder {
-      white-space: pre-line;
-      font-style: italic;
-      color: #d7d7d7;
-      text-align: center;
-    }
+    @include input;
   }
 
-  &__btn {
-    width: 19rem;
-    background-color: #ffc529;
-    padding: 0.8rem 1.2rem;
-    border-radius: 6px;
-    transition: transform 0.3s ease, border-color 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-      border-color: #d7d7d7;
-    }
+  &__button {
+    @include button;
   }
 
   &__results {
@@ -59,5 +38,9 @@
 
   &__recipe {
     margin-right: 1rem;
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
   }
 }
