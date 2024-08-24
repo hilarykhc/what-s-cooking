@@ -1,0 +1,26 @@
+@use "./variables";
+
+@mixin tablet-and-desktop {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin button {
+  width: 19rem;
+  background-color: #ffc529;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    border-color: #d7d7d7;
+  }
+}
