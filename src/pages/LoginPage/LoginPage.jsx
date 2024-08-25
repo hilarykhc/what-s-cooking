@@ -1,6 +1,5 @@
 import "../LoginPage/LoginPage.scss";
 import { Link } from "react-router-dom";
-import profileIcon from "../../assets/icons/profile.svg";
 
 export default function LoginPage() {
   return (
@@ -22,14 +21,12 @@ export default function LoginPage() {
         <button className="login__button">Sign in</button>
       </form>
 
-      {/* <Link> */}
       <p className="login__signup">
         New here?{" "}
         <Link to="/signup">
           <span className="login__link">Create an account</span>
         </Link>
       </p>
-      {/* </Link> */}
     </section>
   );
 }

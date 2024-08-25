@@ -1,0 +1,21 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.onboarding {
+  &__button {
+    @include button;
+    margin: 1rem;
+    width: 11rem;
+
+    &-container {
+      display: flex;
+      margin-top: 12rem;
+    }
+  }
+
+  &__text {
+    margin-top: 1rem;
+  }
+}
