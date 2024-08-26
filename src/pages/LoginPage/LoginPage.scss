@@ -19,7 +19,7 @@
     flex-direction: column;
   }
 
-  &__input-username {
+  &__input-email {
     padding: 0.85rem 0 0.85rem 1.75rem;
     @include input;
     background-image: url("../../assets/icons/profile.svg");

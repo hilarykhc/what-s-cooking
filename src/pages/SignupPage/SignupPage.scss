@@ -2,3 +2,66 @@
 @use "../../styles/partials/resets" as *;
 @use "../../styles/partials/typography" as *;
 @use "../../styles/partials/variables" as *;
+
+.sign-up {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  &__input {
+    padding: 0.85rem 0 0.85rem 1.75rem;
+    @include input;
+    font-size: 1rem;
+    height: 1.25rem;
+
+    &::placeholder {
+      position: absolute;
+      top: 35%;
+      left: 3rem;
+      font-size: 1rem;
+    }
+
+    &-username {
+      background-image: url("../../assets/icons/profile.svg");
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 17px 17px;
+    }
+
+    &-email {
+      background-image: url("../../assets/icons/email.svg");
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 20px 20px;
+    }
+
+    &-password {
+      background-image: url("../../assets/icons/password.svg");
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 20px 20px;
+    }
+
+    &-avatar {
+      background-image: url("../../assets/icons/url.svg");
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      background-size: 17px 17px;
+    }
+  }
+
+  &__text {
+    text-align: left;
+  }
+
+  &__button {
+    @include button;
+    margin: 1rem 0;
+  }
+}

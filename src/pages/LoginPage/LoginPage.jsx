@@ -12,9 +12,9 @@ export default function LoginPage() {
 
         <form className="login__form">
           <input
-            className="login__input-username"
-            name="username"
-            placeholder="Enter username or email"
+            className="login__input-email"
+            name="email"
+            placeholder="Enter email"
           />
           <input
             className="login__input-password"
