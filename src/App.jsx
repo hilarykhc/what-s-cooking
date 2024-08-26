@@ -9,7 +9,7 @@ import Onboarding from "./pages/Onboarding/Onboarding";
 function App() {
   return (
     <BrowserRouter>
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/onboarding" element={<Onboarding />} />

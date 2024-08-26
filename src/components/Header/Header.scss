@@ -1,5 +1,14 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
 .header {
   &__img {
-    width: 25rem;
+    width: 17rem;
+
+    @include tablet-and-desktop {
+      width: 25rem;
+    }
   }
 }
