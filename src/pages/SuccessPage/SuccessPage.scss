@@ -4,6 +4,10 @@
 @use "../../styles/partials/variables" as *;
 
 .success {
+  &__title {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
   &__button {
     @include button;
   }

@@ -10,7 +10,7 @@ export default function Onboarding() {
       <section className="onboarding">
         {/* <h1 className="onboarding__title">What's Cooking?</h1> */}
         <p className="onboarding__text">
-          Fridge Raider, Kitchen Savior. Waste less and enjoy more
+          Fridge Raider, Kitchen Savior. Waste less and enjoy more.
         </p>
 
         <div className="onboarding__button-container">

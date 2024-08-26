@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../SignupPage/SignupPage.scss";
 
 export default function SignupPage() {
   const [signedup, setSignedup] = useState(false);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (signedup) {
+      setTimeout(() => {
+        navigate("/success");
+      }, 1500);
+    }
+  }, [signedup, navigate]);
 
   return (
     <>
@@ -76,7 +86,7 @@ export default function SignupPage() {
           />
 
           <button className="sign-up__button">Next</button>
-          {signedup && <div>Sign up successful, please log in</div>}
+          {/* {signedup && <div>Sign up successful, please log in</div>} */}
           {error && <div>{error}</div>}
         </div>
       </form>
