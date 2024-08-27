@@ -22,7 +22,7 @@
     { "id": 12, "name": "Greek" }
   ],
   "cookingTime": [
-    { "id": 1, "name": "Less than 15 mins" },
+    { "id": 1, "name": "Under 15 mins" },
     { "id": 2, "name": "15-30 mins" },
     { "id": 3, "name": "30-60 mins" },
     { "id": 4, "name": "Over 60 mins" }
