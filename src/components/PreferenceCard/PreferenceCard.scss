@@ -1,0 +1,33 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/resets" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.preference {
+  &__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+
+    @include tablet-and-desktop {
+      justify-content: center;
+    }
+  }
+
+  &__dietary {
+    &-name {
+      color: #ffffff;
+    }
+
+    &-card {
+      border: 1px solid #ffffff;
+      padding: 1rem;
+      margin: 1rem;
+      flex-shrink: 0;
+    }
+  }
+}

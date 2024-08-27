@@ -8,6 +8,7 @@ import Onboarding from "./pages/Onboarding/Onboarding";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import SuccessPage from "./pages/SuccessPage/SuccessPage";
 import { useState } from "react";
+import PreferencePage from "./pages/PreferencePage/PreferencePage";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<LoginPage setToken={setToken} />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/success" element={<SuccessPage />} />
+        <Route path="/preference" element={<PreferencePage />} />
       </Routes>
     </BrowserRouter>
     // <>

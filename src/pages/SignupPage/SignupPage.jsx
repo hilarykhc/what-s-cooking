@@ -17,7 +17,7 @@ export default function SignupPage() {
   }, [signedup, navigate]);
 
   return (
-    <>
+    <div className="sign-up__container">
       <h2 className="sign-up__title">Create an account.</h2>
       <form
         className="sign-up__form"
@@ -90,6 +90,6 @@ export default function SignupPage() {
           {error && <div>{error}</div>}
         </div>
       </form>
-    </>
+    </div>
   );
 }
