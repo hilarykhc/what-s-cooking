@@ -12,6 +12,7 @@
 
   &__title {
     margin-bottom: 0.5rem;
+    color: $text-color;
   }
 
   &__form {
@@ -68,5 +69,9 @@
     &:hover {
       transform: scale(1.025);
     }
+  }
+
+  &__signup {
+    color: $text-color;
   }
 }
