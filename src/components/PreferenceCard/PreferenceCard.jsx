@@ -4,7 +4,7 @@ import preferencesData from "../../data/preferences.json";
 export default function PreferenceCard() {
   return (
     <>
-      <div>
+      <div className="preference__card-wrapper">
         <p className="preference__subtitle">1. Dietary Preferences:</p>
         <section className="preference__section">
           {preferencesData.dietary.map((preference) => {
@@ -18,7 +18,7 @@ export default function PreferenceCard() {
           })}
         </section>
       </div>
-      <div>
+      <div div className="preference__card-wrapper">
         <p className="preference__subtitle">2. Cuisine Preferences:</p>
         <section className="preference__section">
           {preferencesData.cuisine.map((preference) => {
@@ -32,7 +32,7 @@ export default function PreferenceCard() {
           })}
         </section>
       </div>
-      <div>
+      <div div className="preference__card-wrapper">
         <p className="preference__subtitle">3. Meal Prep Time:</p>
         <section className="preference__section">
           {preferencesData.cookingTime.map((preference) => {
@@ -46,7 +46,7 @@ export default function PreferenceCard() {
           })}
         </section>
       </div>
-      <div>
+      <div div className="preference__card-wrapper">
         <p className="preference__subtitle">4. Cooking Methods:</p>
         <section className="preference__section">
           {preferencesData.cookingMethod.map((preference) => {

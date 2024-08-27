@@ -12,7 +12,8 @@
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: thin;
-    scrollbar-color: $text-color #f1f1f1;
+    // scrollbar-color: $text-color #f1f1f1;
+    scrollbar-color: $text-color transparent;
 
     // @include tablet-and-desktop {
     //   justify-content: center;
@@ -21,21 +22,28 @@
 
   &__subtitle {
     color: $text-color;
+    text-align: left;
+  }
+
+  &__card-wrapper {
+    margin-bottom: 1rem;
   }
 
   &__dietary {
     &-name {
-      color: $text-color;
+      color: $text-secondary-color;
+      font-size: 0.75rem;
     }
 
     &-card {
       border: 1px solid #ffffff;
+      background-color: $text-color;
       border-radius: 0.5rem;
       padding: 0.5rem;
       margin: 1rem 0.75rem;
       flex-shrink: 0;
-      width: 6rem;
-      height: 4rem;
+      width: 4rem;
+      height: 2.5rem;
       display: flex;
       justify-content: center;
       align-items: center;

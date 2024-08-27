@@ -6,9 +6,10 @@ export default function PreferencePage() {
     <>
       <h2 className="preference__title">Select all that applies to you.</h2>
       <form>
-        <div>
+        <div className="preference__wrapper">
           <PreferenceCard />
         </div>
+        <button className="preference__button">Next</button>
       </form>
     </>
   );
