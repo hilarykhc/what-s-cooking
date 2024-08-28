@@ -18,10 +18,10 @@ function App() {
       {/* <Header /> */}
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/onboarding" element={<Onboarding />} />
+        <Route path="/onboarding" element={<Onboarding token={token} />} />
         <Route path="/login" element={<LoginPage setToken={setToken} />} />
         <Route path="/signup" element={<SignupPage />} />
-        <Route path="/success" element={<SuccessPage />} />
+        {/* <Route path="/success" element={<SuccessPage />} /> */}
         <Route path="/preference" element={<PreferencePage />} />
       </Routes>
     </BrowserRouter>

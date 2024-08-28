@@ -43,7 +43,7 @@ export default function LoginPage({ setToken }) {
               setToken(token);
 
               setTimeout(() => {
-                navigate("/success");
+                navigate("/onboarding");
               }, 1500);
             } catch (e) {
               setError(e?.response?.data || "please try again");
