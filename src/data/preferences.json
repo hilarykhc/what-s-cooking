@@ -8,24 +8,24 @@
     { "id": 6, "name": "Halal", "description": "Compliant with Islamic law" }
   ],
   "cuisine": [
-    { "id": 1, "name": "Italian" },
-    { "id": 2, "name": "Chinese" },
-    { "id": 3, "name": "Indian" },
-    { "id": 4, "name": "Mexican" },
-    { "id": 5, "name": "Japanese" },
-    { "id": 6, "name": "Mediterranean" },
-    { "id": 7, "name": "French" },
-    { "id": 8, "name": "Thai" },
-    { "id": 9, "name": "Korean" },
-    { "id": 10, "name": "American" },
-    { "id": 11, "name": "Spanish" },
-    { "id": 12, "name": "Greek" }
+    { "id": 101, "name": "Italian" },
+    { "id": 102, "name": "Chinese" },
+    { "id": 103, "name": "Indian" },
+    { "id": 104, "name": "Mexican" },
+    { "id": 105, "name": "Japanese" },
+    { "id": 106, "name": "Mediterranean" },
+    { "id": 107, "name": "French" },
+    { "id": 108, "name": "Thai" },
+    { "id": 109, "name": "Korean" },
+    { "id": 110, "name": "American" },
+    { "id": 111, "name": "Spanish" },
+    { "id": 112, "name": "Greek" }
   ],
   "cookingTime": [
-    { "id": 1, "name": "Under 15 mins" },
-    { "id": 2, "name": "15-30 mins" },
-    { "id": 3, "name": "30-60 mins" },
-    { "id": 4, "name": "Over 60 mins" }
+    { "id": 1001, "name": "Under 15 mins" },
+    { "id": 1002, "name": "15-30 mins" },
+    { "id": 1003, "name": "30-60 mins" },
+    { "id": 1004, "name": "Over 60 mins" }
   ],
   "cookingMethod": [
     { "id": 1, "name": "Boiling" },

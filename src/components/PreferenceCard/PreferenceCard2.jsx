@@ -9,24 +9,30 @@ export default function PreferenceCard() {
     cookingTime: new Set(),
     cookingMethod: new Set(),
   });
+  //   console.table(preferencesData.cuisine);
 
   const handleCardClick = (category, id) => {
     console.log(`Card clicked! Category: ${category}, ID: ${id}`);
 
     setSelectedPreferences((prevSelected) => {
-      const newSelected = { ...prevSelected };
-      // if (!newSelected[category]) {
-      //   newSelected[category] = new Set();
-      // }
-      if (newSelected[category].has(id)) {
-        newSelected[category].delete(id);
+      const newSelectedCategory = new Set(prevSelected[category]);
+
+      if (newSelectedCategory.has(id)) {
+        newSelectedCategory.delete(id);
       } else {
-        newSelected[category].add(id);
+        newSelectedCategory.add(id);
       }
-      console.log("Updated selection:", newSelected);
-      return newSelected;
+      console.log("Updated selection:", newSelectedCategory);
+      return {
+        ...prevSelected,
+        [category]: newSelectedCategory,
+      };
     });
   };
+
+  //   useEffect(() => {
+  //     console.log("Selected preferences updated:", selectedPreferences);
+  //   }, [selectedPreferences]);
 
   return (
     <>
@@ -52,7 +58,7 @@ export default function PreferenceCard() {
           })}
         </section>
       </div>
-      <div div className="preference__card-wrapper">
+      <div className="preference__card-wrapper">
         <p className="preference__subtitle">2. Cuisine Preferences:</p>
         <section className="preference__section">
           {preferencesData.cuisine.map((preference) => {
@@ -65,7 +71,7 @@ export default function PreferenceCard() {
                 className={`preference__dietary-card ${
                   isSelected ? "selected" : ""
                 }`}
-                onClick={() => handleCardClick(preference.id)}
+                onClick={() => handleCardClick("cuisine", preference.id)}
               >
                 <p className="preference__dietary-name">{preference.name}</p>
               </article>
@@ -78,9 +84,18 @@ export default function PreferenceCard() {
         <section className="preference__section">
           {preferencesData.cookingTime.map((preference) => {
             console.log(preference.name);
+            const isSelected = selectedPreferences.cookingTime.has(
+              preference.id
+            );
 
             return (
-              <article key={preference.id} className="preference__dietary-card">
+              <article
+                key={preference.id}
+                className={`preference__dietary-card ${
+                  isSelected ? "selected" : ""
+                }`}
+                onClick={() => handleCardClick("cookingTime", preference.id)}
+              >
                 <p className="preference__dietary-name">{preference.name}</p>
               </article>
             );
@@ -92,9 +107,18 @@ export default function PreferenceCard() {
         <section className="preference__section">
           {preferencesData.cookingMethod.map((preference) => {
             console.log(preference.name);
+            const isSelected = selectedPreferences.cookingMethod.has(
+              preference.id
+            );
 
             return (
-              <article key={preference.id} className="preference__dietary-card">
+              <article
+                key={preference.id}
+                className={`preference__dietary-card ${
+                  isSelected ? "selected" : ""
+                }`}
+                onClick={() => handleCardClick("cookingMethod", preference.id)}
+              >
                 <p className="preference__dietary-name">{preference.name}</p>
               </article>
             );
